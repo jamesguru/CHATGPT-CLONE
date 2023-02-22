@@ -1,0 +1,26 @@
+.container{
+
+    background-color:  #282c34;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    display: flex;
+}
+
+.sidebar{
+
+    background-color: #232325;
+    flex: 1;
+
+    height: 100vh;
+}
+
+.chartbox{
+flex: 4;
+
+}
