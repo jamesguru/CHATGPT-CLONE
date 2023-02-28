@@ -20,6 +20,42 @@
 
 .chartbox {
   flex: 4;
+  position: relative;
+}
+.chat-area{
+
+  font-size: 20px;
+}
+.chatgpt {
+  display: flex;
+  align-items: center;
+  padding: 10px 30%;
+  background-color: #444654;
+  width: 100%;
+}
+
+.avartar-gpt {
+  background-color: #10a37f;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.avartar{
+  background-color: #fff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+
+}
+
+.user-chat{
+  display: flex;
+  align-items: center;
+  margin: 10px 30%;
+
 }
 .sidebar-button {
   padding: 15px;
@@ -44,4 +80,27 @@
 
 .sidebar-button:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.chat-input-holder {
+  padding: 12px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.chat-input-textarea {
+  background-color: #40414f;
+  width: 80%;
+  border-radius: 5px;
+  border-color: none;
+  border: none;
+
+  margin: 12px;
+  padding: 20px;
+  outline: none;
+  color: #fff;
+  font-size: 1.2em;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
 }
