@@ -29,9 +29,11 @@
 .chatgpt {
   display: flex;
   align-items: center;
-  padding: 10px 30%;
+  padding: 20px 30%;
+  
   background-color: #444654;
-  width: 100%;
+  width: auto;
+ 
 }
 
 .avartar-gpt {
@@ -54,7 +56,7 @@
 .user-chat{
   display: flex;
   align-items: center;
-  margin: 10px 30%;
+  margin: 20px 30%;
 
 }
 .sidebar-button {

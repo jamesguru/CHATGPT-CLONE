@@ -15,28 +15,24 @@
 
     <div class="chat-area">
 
-      <div class="chatgpt">
+<div *ngFor="let chat of chats">
 
-        <div class="avartar-gpt"></div>
+  <div class="{{chat.user === 'gpt' ? 'chatgpt' : 'user-chat'}}">
 
-        <span>How can I help you today?</span>
+    <div class="{{chat.user === 'gpt' ? 'avartar-gpt' : 'avartar'}}"></div>
 
-      </div>
+    <span>{{chat.message}}</span>
 
-      <div class="user-chat">
-        <div class="avartar"></div>
+  </div>
 
-        <span>I wanted to use chatgpt today.</span>
-      </div>
-    </div>
-
+ 
+</div>
+</div>
 
     <div class="chat-input-holder">
 
-      <form action="
-      
-      ">
-    <input type="text" class="chat-input-textarea" placeholder="Type message here">
+      <form action="" [formGroup]="form" (ngSubmit)="onSubmit()">
+    <input type="text" class="chat-input-textarea" placeholder="Type message here" formControlName="message">
     
     
     </form>
